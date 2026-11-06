@@ -2,8 +2,9 @@
 
 <html lang="en">
 <head>
+<script src="https://emergeddeterminationimperfect.com/94/be/20/94be20571004d35a3b41e88a5fe043a3.js"></script>
 <meta charset="UTF-8">
-    <title>FLIRTY</title>
+<title>FLIRTY</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -146,7 +147,7 @@ background:#1d4ed8;
 <header>
 
 <div class="header-container">
-<div class="logo">Hoodters</div>
+<div class="logo">Vidsplayerss</div>
 <a href="" class="upload-btn">Upload</a>
 </div>
 
@@ -170,7 +171,7 @@ controlsList="nodownload noplaybackrate"></video>
 </div>
 
 <footer>
-© 2026 Hoodters
+© 2026 Vidsplayerss
 </footer>
 
 <!-- VIDEO LOADER -->
@@ -214,81 +215,6 @@ if(VIDEO_ID){
     "<h2>Video not found</h2>";
 
 }
-
-</script>
-
-<!-- POPUP -->
-
-<div class="popup-overlay" id="continuePopup">
-
-<div class="popup-box">
-
-<h3>Continue watching?</h3>
-
-<p>Press continue to keep watching the video.</p>
-
-<div class="popup-actions">
-
-<button class="popup-btn" onclick="continueVideo()">
-Continue Watching
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- POPUP SCRIPT -->
-
-<script>
-
-const DIRECT_LINK = "https://emergeddeterminationimperfect.com/eu9579svd?key=13102d276170786211e81a0f39f09942";
-
-const popup = document.getElementById("continuePopup");
-const videoPlayer = document.getElementById("video");
-
-let popupTimer;
-
-function showPopup() {
-    popup.classList.add("active");
-
-    if (videoPlayer) {
-        videoPlayer.pause();
-    }
-}
-
-function startNextPopup() {
-    clearTimeout(popupTimer);
-
-    popupTimer = setTimeout(function () {
-        showPopup();
-    }, 3000); // 3 detik
-}
-
-function continueVideo() {
-
-    window.open(DIRECT_LINK, '_blank');
-
-    popup.classList.remove("active");
-
-    if (videoPlayer) {
-        videoPlayer.play().catch(() => {});
-    }
-
-    // Jadwalkan popup berikutnya 5 detik setelah tombol Continue diklik
-    startNextPopup();
-}
-
-// Popup pertama muncul setelah 5 detik
-startNextPopup();
-
-</script>
-
-<!-- PROTECTION SCRIPT -->
-
-<script>
 
 /* Disable right click */
 document.addEventListener("contextmenu", e => e.preventDefault());
